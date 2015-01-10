@@ -216,13 +216,13 @@
 	</dependencies>
 	<!-- Package as an executable jar -->
 	<build>
-		<finalName>LogAnalyzer</finalName>
+		<finalName>nLightServices</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			    <configuration>
-			        <mainClass>com.nibodha.springboot.Application</mainClass>
+			        <mainClass>com.nibodha.lgaas.Application</mainClass>
 			    </configuration>			
 			</plugin>
 		</plugins>
