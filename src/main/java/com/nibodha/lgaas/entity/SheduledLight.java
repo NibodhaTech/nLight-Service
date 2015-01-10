@@ -2,7 +2,11 @@ package com.nibodha.lgaas.entity;
 
 import java.sql.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class SheduledLight {
+	@Id
 	private Long id;
 	private String name;
 	private Light light;

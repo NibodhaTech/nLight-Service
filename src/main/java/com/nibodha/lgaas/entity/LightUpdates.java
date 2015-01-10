@@ -1,7 +1,8 @@
 package com.nibodha.lgaas.entity;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
-
+@Entity
 public class LightUpdates extends BaseEntity{
 	@Id
 	private Long id;

@@ -15,8 +15,40 @@ public class User {
 			@Parameter(name = "sequence", value = "User_seq") })
 	private Long id;
 	private String uname;
+	private String password;
 	private String apikey;
 	private String userSource;
+	private String state;
+	private String zip;
+	private String country;
+	
+	
+	
+	
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getZip() {
+		return zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public Long getId() {
 		return id;
 	}

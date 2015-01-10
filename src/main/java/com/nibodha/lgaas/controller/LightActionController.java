@@ -13,13 +13,13 @@ public class LightActionController {
 	@Autowired
 	LightActionService lightActionService;
 	
-	@RequestMapping("/blink/{level}")
-	public String startLight(@PathVariable("level") Long level){
-		
-		
-		
-		
+	@RequestMapping("/blink/{level}/{lightid}/{activationkey}")
+	public String startLight(@PathVariable("level") Long level,@PathVariable("lightid") Long lightid,@PathVariable("activationkey") String activationkey) throws Exception{
+		String result = lightActionService.blinkLight(level,lightid,activationkey);
+		return null;
 	}
+	
+	
 	
 
 }

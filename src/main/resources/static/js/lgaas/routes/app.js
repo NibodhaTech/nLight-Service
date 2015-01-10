@@ -11,10 +11,16 @@ App.config(['$routeProvider', function ($routeProvider) {
         controller: LogImportController
     });
 
-    $routeProvider.when('/admin', {
-        templateUrl: 'templates/admin.html',
+   /* $routeProvider.when('/login', {
+        templateUrl: 'templates/login.html',
         controller: AdminController
     });
+    */
+
+    /*$routeProvider.when('/mainpage', {
+        templateUrl: 'templates/mainpage.html',
+        controller: MainPageController
+    });*/
 
     $routeProvider.otherwise({redirectTo: '/logimport'});
 }]);
