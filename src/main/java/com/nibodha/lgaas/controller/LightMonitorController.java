@@ -43,7 +43,7 @@ public class LightMonitorController {
 		 return oMapper.writeValueAsString(lightList);
 	}
 	
-	@RequestMapping(value = "/createlightdata", method = RequestMethod.POST)
+	@RequestMapping(value = "/lightinfo", method = RequestMethod.POST)
 	public String createLightData(@RequestBody Light light) throws JsonProcessingException{
 		String apikey = lightActionService.createlightdata(light);
 		System.out.println("Add User "+apikey);

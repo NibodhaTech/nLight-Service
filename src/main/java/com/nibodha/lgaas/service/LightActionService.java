@@ -34,7 +34,7 @@ public class LightActionService {
 	// HTTP POST request
 		private String sendPost(Long level, Long lightid, String activationkey) throws Exception {
 	 
-			String url = "http://2210eaaf.ngrok.com/control/light/"+lightid;
+			String url = "http://10648bfe.ngrok.com/control/light/"+lightid;
 	 
 			HttpClient client = new DefaultHttpClient();
 			HttpPost post = new HttpPost(url);
