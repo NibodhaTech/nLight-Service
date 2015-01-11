@@ -13,9 +13,34 @@ public class Light extends BaseEntity{
 	private String lightlot;
 	private String lightlat;
 	private String lightVoltage;
+	private String lightTemperature;
+	private String description;
 	private String status;
+	private String zone;
 	
 	
+	
+	
+	
+	
+	public String getZone() {
+		return zone;
+	}
+	public void setZone(String zone) {
+		this.zone = zone;
+	}
+	public String getLightTemperature() {
+		return lightTemperature;
+	}
+	public void setLightTemperature(String lightTemperature) {
+		this.lightTemperature = lightTemperature;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	public String getStatus() {
 		return status;
 	}
