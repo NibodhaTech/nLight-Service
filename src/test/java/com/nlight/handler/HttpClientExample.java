@@ -65,7 +65,7 @@ public class HttpClientExample {
 	// HTTP POST request
 	private void sendPost() throws Exception {
  
-		String url = "http://2210eaaf.ngrok.com/control/light/33";
+		String url = "http://10648bfe.ngrok.com/control/light/33";
  
 		HttpClient client = new DefaultHttpClient();
 		HttpPost post = new HttpPost(url);
@@ -73,7 +73,7 @@ public class HttpClientExample {
 		// add header
 		post.setHeader("User-Agent", USER_AGENT);
 		post.setHeader("Content-Type", "application/json");
-		post.setEntity(new StringEntity("{\"action\":\"0\"}"));
+		post.setEntity(new StringEntity("{\"action\":\"2\"}"));
  
 		/*List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
 		urlParameters.add(new BasicNameValuePair("sn", "C02G8416DRJM"));

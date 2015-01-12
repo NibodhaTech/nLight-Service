@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.nibodha.lgaas.dao.DeviceDao;
 import com.nibodha.lgaas.dao.LightDao;
+import com.nibodha.lgaas.entity.Device;
 import com.nibodha.lgaas.entity.Light;
 
 @Service
@@ -69,15 +70,17 @@ public class LightActionService {
 			// TODO Auto-generated method stub
 			Light l = lightDao.findOne(lightid);
 			if(l == null){
+				Device device = new Device();
+				
 				Light lig = new Light();
 				lig.setDescription("Philips offers a wide range of both decorative and functional lighting. From outdoor LED lights to multicolored indoor lights, Philips has it all.");
 				lig.setDevicename(deviceDao.findOne(1L));
 				lig.setId(1L);
-				lig.setLightlat("10.2323234556");
-				lig.setLightlot("10.2323234556");
-				lig.setLightTemperature("10^C");
+				lig.setLightlat("10.8778826252");
+				lig.setLightlot("12.9837736223");
+				lig.setLightTemperature("27 Degrees");
 				lig.setLightVoltage("200 v");
-				lig.setName("My Light");
+				lig.setName("Startup-Villege");
 				l = lig;
 				lightDao.save(lig);
 			}
